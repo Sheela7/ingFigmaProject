@@ -1353,6 +1353,14 @@ header {
   }
 }
 @media (min-width: 1024px) {
+  .mid {
+    margin-top: 0px;
+  }
+  .scrollBtn {
+    transform: rotate(270deg);
+    padding-left: 60px;
+    padding-top: 8px;
+  }
   .footerTop .footerTopMain {
     font-size: 42px;
   }
