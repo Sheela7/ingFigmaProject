@@ -104,6 +104,12 @@ header {
 }
 .shopify p {
   margin-top: 6px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
 }
 .heroContent {
   position: absolute;
@@ -169,6 +175,12 @@ header {
   text-align: center;
   margin: auto;
   width: 80%;
+  color: #516175;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .logoSide p span {
   font-weight: 900;
@@ -180,14 +192,21 @@ header {
   /* border: 1px solid blue; */
   margin-top: 10px;
 }
+.shopifyCard p {
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
 .shopifyCard img {
   height: 30px;
   width: 30px;
   margin-right: 5px;
 }
 .join {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin: 1.5rem auto;
 }
 .join img {
   width: 100%;
@@ -196,9 +215,16 @@ header {
 }
 .join .joinMain {
   text-align: center;
-  margin: auto;
+  margin: 1rem auto;
   width: 80%;
   /* border: 1px solid green; */
+  color: #1f3155;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.26px;
 }
 .join p span {
   font-weight: 900;
@@ -209,9 +235,22 @@ header {
   align-items: flex-end;
   /* border: 1px solid blue; */
   margin-top: 10px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: -10px 30px 30px 2px rgba(0, 0, 0, 0.05);
+}
+.free .freeText {
+  background: #fff;
 }
 .free p {
   margin-right: 10px;
+  color: #57caec;
+  text-align: center;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .items {
   /* border: 2px solid magenta; */
@@ -226,6 +265,13 @@ header {
 .bottomItem .mainDesc {
   display: flex;
   justify-content: center;
+  color: #000;
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
 }
 .itemsImages {
   /* border: 1px solid red; */
@@ -234,25 +280,47 @@ header {
   width: 70%;
 }
 .card {
-  margin-top: 10px;
-  /* border: 1px solid blue; */
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .itesmsDescription {
   margin-top: 10px;
-  font-size: x-small;
   display: flex;
   justify-content: space-evenly;
+  color: #6c7188;
+  font-size: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
+
 .dollarStar {
   display: flex;
   justify-content: space-evenly;
 }
 .dollar {
-  font-weight: 800;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
 }
 .itemsName {
-  /* border: 1px solid green; */
-  margin-left: 50px;
+  color: #a0a0b3;
+  text-align: center;
+  font-size: 16px;
+  margin: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
 }
 .buttn {
   background-color: #0ab3e4;
@@ -260,8 +328,9 @@ header {
   display: block;
   margin: auto;
   text-align: center;
-  width: 30%;
   border: none;
+  padding: 0.75em 2em;
+  margin-bottom: 20px;
 }
 .goldText {
   color: #f7a70e;
@@ -274,8 +343,16 @@ header {
   letter-spacing: 1.04px;
 }
 .topMainText {
-  width: 40%;
+  width: 60%;
   margin: 10px auto;
+  color: #000;
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-align: center;
 }
 .services ul {
   width: 95%;
@@ -311,6 +388,7 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1.04px;
+  margin-bottom: 10px;
 }
 .team .become {
   color: #2d3a62;
@@ -332,6 +410,7 @@ header {
 }
 .team .teamDesc {
   margin-top: 10px;
+  margin-bottom: 15px;
   color: #a0a0b3;
   font-size: 12px;
   font-family: Roboto;
@@ -352,6 +431,12 @@ header {
   margin: 0 auto; /* Center the div horizontally */
   text-align: center;
   padding-left: 0;
+  margin-bottom: 10px;
+}
+.team .teamLists li {
+  display: flex; /* Make the list items flex containers */
+  align-items: center; /* Center the icon and text vertically */
+  gap: 10px; /* Add a 5px gap between the icon and text */
 }
 .team .teamLists li i.fa-sharp.fa-solid.fa-check {
   color: #f7ad2d; /* Set color to gold for the icons */
@@ -455,8 +540,19 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
+  color: #ffffff;
   justify-content: space-evenly;
   margin-bottom: 50px;
+}
+.review {
+  background: linear-gradient(
+    172deg,
+    #f6fbff 20.48%,
+    rgba(234, 243, 255, 0.96) 39.06%,
+    #eef6ff 72.25%,
+    rgba(255, 255, 255, 0) 93.88%,
+    #ddeeff
+  );
 }
 .reviewGold {
   color: #f7a70e;
@@ -491,10 +587,13 @@ header {
   text-align: center;
 }
 .reviewCard {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
   /* border: 1px solid red; */
   margin: 20px 8px;
   text-align: center;
   /* align-items: center; */
+  box-shadow: 16px 0px 58px 0px rgba(0, 0, 0, 0.1);
 }
 .rName {
   display: flex;
@@ -555,6 +654,7 @@ header {
 }
 .footer {
   background: #213757;
+  padding: 1rem 1.5rem;
 }
 .footerTopMain {
   color: #e4e5e9;
@@ -564,26 +664,26 @@ header {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.26px;
+  text-align: center;
 }
-.footerButtons {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px 0px;
+.footerButtons button {
+  display: block;
+  width: 100%;
+  padding: 0.75em 2em;
+  margin-bottom: 20px;
+}
+.footerButtons i {
+  margin-left: 5px;
 }
 .btnExpert {
   border: none;
   color: #0ab3e4;
   background-color: #ffffff;
-  height: 30px;
-  width: 45%;
-  /* width: 40%; */
 }
 .btnFreeEstimate {
   border: none;
   background: #0ab3e4;
   color: #ffffff;
-  height: 30px;
-  width: 45%;
 }
 .footerMainImg {
   display: flex;
@@ -708,7 +808,7 @@ header {
   line-height: normal;
   letter-spacing: 0.36px;
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .hamburger-menu {
     display: none;
   }
