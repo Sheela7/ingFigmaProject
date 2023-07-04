@@ -14,49 +14,37 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="main">
       <header>
         <div class="home">
-          <nav class="navbar">
-            <div class="logo">
-              <img src="src/images/headerImages/mainLogo.svg" alt="logo" />
-            </div>
-            <div class="centerNav">
-              <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">PORTFOLIO</a></li>
-                <li><a href="/">SERVICE</a></li>
-                <li><a href="/">BLOG</a></li>
-                <li><a href="/">CONTACT</a></li>
-              </ul>
-            </div>
-            <div class="sideNav">
-              <ul>
-                <li>
-                  <img src="src/images/headerImages/user.svg" alt="user icon" />
-                </li>
-                <li>
-                  <img
-                    src="src/images/headerImages/search.svg"
-                    alt="search icon"
-                  />
-                </li>
-                <li>
-                  <img src="src/images/headerImages/bell.svg" alt="bell icon" />
-                </li>
-              </ul>
-            </div>
-            <div class="hamburger-menu">
-              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
-            </div>
-          </nav>
+             <div class="navigation">
+        <a href="#home" class="company-logo"><span>last</span>40</a>
+        <nav class="navbar">
+          <ul class="navbar-pagelinks">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <ul class="navbar-icons">
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+          </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="showMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+        
           <div class="buttons">
             <button class="btn prevBtn">PREV</button>
             <div class="prevArrow">
@@ -496,5 +484,6 @@
         </div>
       </div>
     </div>
+   <script src="./script.js"></script>
   </body>
 </html>
