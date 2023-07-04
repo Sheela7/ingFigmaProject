@@ -1,3 +1,20 @@
+/* padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin: 20px 8px;
+  text-align: center;
+  box-shadow: 16px 0px 58px 0px rgba(0, 0, 0, 0.1); 
+  ....
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 500px;
+    padding: 50px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+  */
+
 :root {
   --clr-white: #fff;
 }
@@ -14,6 +31,7 @@ header {
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 290px;
   padding: 1rem;
 }
 .company-logo {
@@ -172,7 +190,7 @@ header {
   position: relative;
   height: 180px;
   width: 200px;
-  margin-top: 100px;
+  margin-top: 20px;
   top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -238,7 +256,7 @@ header {
   top: 30%;
   left: 70%;
 }
-.logos img {
+.logos .partnersLogo {
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -248,7 +266,6 @@ header {
 .logoSide {
   display: block;
   margin: auto;
-  /* border: 1px solid red; */
 }
 .logoSide .shopifyStars {
   height: 40px;
@@ -291,17 +308,25 @@ header {
   width: 30px;
   margin-right: 5px;
 }
+/* Changes here */
 .join {
+  /* border: 1px solid red; */
   margin: 1.5rem auto;
+}
+.join .join__img,
+.team .team__img {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .join img {
   width: 100%;
-  max-height: 700px;
 }
 .join .joinMain {
   text-align: center;
   margin: 1rem auto;
   width: 80%;
+  /* border: 1px solid green; */
   color: #1f3155;
   font-size: 18px;
   font-family: Roboto;
@@ -317,6 +342,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  /* border: 1px solid blue; */
   margin-top: 10px;
   border-radius: 2px;
   background: #fff;
@@ -336,6 +362,7 @@ header {
   line-height: normal;
 }
 .items {
+  /* border: 2px solid magenta; */
   background: linear-gradient(
     172deg,
     #fafcfe 20.48%,
@@ -344,11 +371,13 @@ header {
     rgba(255, 255, 255, 0) 93.88%
   );
 }
+/* Added here */
 .items .topItem {
   max-width: 1040px;
   margin-right: auto;
   margin-left: auto;
 }
+
 .bottomItem .mainDesc {
   display: flex;
   justify-content: center;
@@ -361,6 +390,7 @@ header {
   letter-spacing: 1.28px;
 }
 .itemsImages {
+  /* border: 1px solid red; */
   display: block;
   margin: auto;
   width: 70%;
@@ -440,13 +470,13 @@ header {
   letter-spacing: 0.84px;
   text-align: center;
 }
+
 .services ul {
-  width: 95%;
+  width: 100%;
   color: #ffffff;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  margin: 10px auto;
+  justify-content: space-around;
 }
 .services ul li a {
   font-size: 7px;
@@ -529,6 +559,7 @@ header {
 }
 .team .teamLists ul {
   list-style: none; /* Remove list bullets */
+
   padding-left: 0; /* Remove default list padding */
 }
 
@@ -540,13 +571,15 @@ header {
 .buttns i.fa-solid.fa-arrow-right {
   color: #57caec; /* Set color for the icon inside the button */
 }
+/* Padding changed */
 .benefits {
+  padding-top: 20px;
   border: 2px solid #b3bccf;
   background: #2f5792;
 }
 .benefitsGold {
   color: #f7a70e;
-  font-size: 10px;
+  font-size: 14px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -555,6 +588,7 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/* Changes */
 .benefitsTop {
   display: flex;
   flex-direction: column;
@@ -569,6 +603,32 @@ header {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2px;
+}
+
+.benefitsMid .cards {
+  width: 265px;
+  text-align: left;
+  line-height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.benefitsMid .cards .top {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1em;
+}
+
+.benefitsMid .cards p.number {
+  font-size: 90px;
+  height: 150px;
+}
+.benefitsMid img {
+  width: 80px;
+}
+.benefitBtn {
+  padding: 6px 1.5em;
+  max-width: 233px;
 }
 .cards {
   margin: 40px auto;
@@ -621,7 +681,6 @@ header {
   border: none;
   background: #4d6d9b;
   width: 50%;
-  height: 25px;
   margin: auto;
   text-align: center;
   display: flex;
@@ -755,6 +814,7 @@ header {
 .footerButtons button {
   display: block;
   width: 100%;
+  max-height: 64px;
   padding: 0.75em 2em;
   margin-bottom: 20px;
 }
@@ -781,7 +841,7 @@ header {
 .footerMainImg {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .footerMainDesc {
   width: 80%;
@@ -898,11 +958,7 @@ header {
   .logo img {
     width: 4rem;
   }
-  /* .navbar {
-    position: sticky;
-    top: 0;
-    height: 50px;
-  } */
+
   .centerNav ul {
     display: block;
     display: flex;
@@ -982,9 +1038,25 @@ header {
     top: 10%;
     left: 50%;
   }
-  .logoSide {
-    width: 285px;
-    padding: 50px 68px;
+  .logoSide .shopifyStars {
+    height: 20px;
+    width: 30%;
+    margin-bottom: 12px;
+  }
+  /* CHanges here */
+  .items .topItem .services ul {
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid #dfe4ea;
+  }
+
+  .items .topItem li {
+    margin-bottom: 10px;
+  }
+
+  .footerButtons {
+    display: flex;
+    gap: 2rem;
   }
 }
 @media (min-width: 640px) {
@@ -1024,9 +1096,148 @@ header {
   .scrollBtn {
     display: flex;
     color: #ffffff;
+    /* height: 100px; */
+    /* transform: rotatex(90deg); */
   }
   .scroll img {
     margin-top: 10px;
+  }
+  .logos {
+    position: relative;
+  }
+  .logoSide {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    background: #fff;
+    backdrop-filter: blur(25px);
+    width: 180px;
+    height: 160px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .logoSide .shopifyJobCounts {
+    height: 70px;
+    font-size: 15px;
+  }
+
+  .shopifyCard {
+    bottom: 0px;
+  }
+  .logos .partnersLogo {
+    width: 70%;
+  }
+  .join .join__img,
+  .team .team__img {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Css */
+  .bottomItemCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bottomItemCards .card {
+    width: 335px;
+  }
+  .review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5em;
+  }
+
+  .review .reviewCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 500px;
+    padding: 50px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .review .reviewMain {
+    text-align: left;
+    font-size: 36px;
+    line-height: 53px;
+  }
+
+  .review .reviewMain span {
+    font-weight: 500;
+  }
+  .footerMainImg {
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+  .footerMainImg img {
+    /* width: 20%; */
+    padding: 9px;
+  }
+  .footerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footerTop .footerTopMain {
+    flex-basis: 40%;
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .footerButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .footerMid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    margin: 2rem 1rem;
+  }
+
+  .footerMid .footerMidMain {
+    max-width: 210px;
+    font-size: 14px;
+  }
+  .footerMainDesc {
+    width: 100%;
+    text-align: left;
+  }
+
+  .midFinal {
+    max-width: 230px;
+  }
+
+  .midFinalDesc {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerBottom .bottomSide p {
+    margin: 0;
+    padding: 1em 2em;
+  }
+
+  .footerLine {
+    margin: 1rem auto;
+    background-color: #616f8559;
+    border-radius: 5px;
+    width: 80%;
+    height: 1px;
   }
 }
 @media (min-width: 769px) {
@@ -1104,36 +1315,21 @@ header {
     font-weight: 500;
     line-height: normal;
   }
+  /* Changing here */
   .join,
   .team {
+    text-align: start;
     display: flex;
     align-items: center;
   }
-  .join img,
-  .team img {
-    max-width: 50%;
-  }
-  .items .topItem .services ul {
-    margin-right: auto;
-    margin-left: auto;
-    border-bottom: 2px solid #dfe4ea;
-  }
-  .items .topItem li {
-    margin-bottom: 10px;
-  }
+  /* Change here */
 
   .items .topItem .services a {
     font-size: 13px;
     font-weight: 500;
   }
 
-  .bottomItemCards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .bottomItemCards .card {
-    border: 1px solid red;
     background-color: #f6f6f8;
     border-radius: 10px;
     margin: 10px;
@@ -1144,8 +1340,25 @@ header {
     width: 100%;
     margin-bottom: 2rem;
   }
+
+  /* CSS code added here */
+  .team .team__img {
+    width: 50%;
+  }
+  /* New css ADDED */
+
+  .benefitsMid {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media (min-width: 1024px) {
+  .footerTop .footerTopMain {
+    font-size: 42px;
+  }
+  .bottomItemCards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1440px) {
