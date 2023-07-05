@@ -24,7 +24,9 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
+.slide {
+  transition: background-image 0.5s ease-in-out;
+}
 header {
   background: url(src/images/headerImages/forest.png);
   overflow: hidden;
@@ -315,7 +317,7 @@ header {
 }
 .join .join__img,
 .team .team__img {
-  width: 70%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -609,7 +611,10 @@ header {
   width: 265px;
   text-align: left;
   line-height: 0;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .benefitsMid .cards .top {
@@ -1129,7 +1134,7 @@ header {
   }
   .join .join__img,
   .team .team__img {
-    width: 60%;
+    width: 40%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1302,6 +1307,10 @@ header {
   .navigation .navbar .navbar-pagelinks li:hover a::after {
     width: 100%;
   }
+  .benefitsMid .cards {
+    /* border: 1px; */
+    width: 30%;
+  }
   .mid {
     margin-top: 50px;
     text-align: center;
@@ -1351,8 +1360,25 @@ header {
     display: flex;
     justify-content: space-between;
   }
+
+  .team .teamLists {
+    margin: 10px 0px 10px 0px;
+  }
+  .join__content {
+    width: 50%;
+  }
+  .reviewTop {
+    align-self: center;
+  }
 }
 @media (min-width: 1024px) {
+  .shopify {
+    left: 40%;
+  }
+  .heroContent {
+    position: absolute;
+    left: 20%;
+  }
   .mid {
     margin-top: 0px;
   }
@@ -1370,4 +1396,7 @@ header {
 }
 
 @media (min-width: 1440px) {
+  .container {
+    border: 1px solid red;
+  }
 }
