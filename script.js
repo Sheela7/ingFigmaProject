@@ -1,3 +1,4 @@
+//js for navbar begins
 let navbar = document.querySelector(".navbar");
 let hamBurgerMenu = document.querySelector(".hamburger-menu");
 let hamBurgerMenuIcon = document.querySelector(".hamburger-menu i");
@@ -9,8 +10,9 @@ function showMenu() {
     ? "fa-solid fa-bars"
     : "fa-solid fa-xmark";
 }
+//js for navbar ends
 
-// .....
+// js for image carousel begins
 const header = document.querySelector("header");
 const prevButton = document.querySelector("#prevButton");
 const nextButton = document.querySelector("#nextButton");
@@ -42,3 +44,4 @@ nextButton.addEventListener("click", () => {
     header.classList.remove("slide");
   }, 500);
 });
+// js for image carousel ends
