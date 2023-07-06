@@ -1,58 +1,52 @@
-/* padding: 1rem 1.5rem;
-  border-radius: 10px;
-  margin: 20px 8px;
-  text-align: center;
-  box-shadow: 16px 0px 58px 0px rgba(0, 0, 0, 0.1); 
-  ....
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-    max-width: 500px;
-    padding: 50px;
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 300;
-  */
-
+/* Define root variables */
 :root {
-  --clr-white: #fff;
+  --clr-white: #fff; /* White color variable */
 }
+
+/* CSS Reset and global styles */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Set default font family to Roboto */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
+
+/* Slide transition */
 .slide {
-  transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out; /* Transition effect for background image */
 }
+
+/* Header styles */
 header {
-  background: url(src/images/headerImages/forest.png);
+  background: url(src/images/headerImages/forest.png); /* Background image */
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Resize background image to cover container */
+  background-position: center; /* Center the background image */
   width: 100%;
   height: 290px;
   padding: 1rem;
 }
+
+/* Company logo styles */
 .company-logo {
-  font-size: 1.75rem;
+  font-size: 1.75rem; /* Set font size for company logo */
 }
 
 .company-logo span {
-  color: #c2970c;
-  font-family: "Great Vibes", cursive;
+  color: #c2970c; /* Set color for company logo span */
+  font-family: "Great Vibes", cursive; /* Set font family for company logo span */
 }
 
+/* Navigation styles */
 .navigation {
   display: flex;
   justify-content: space-between;
-  color: var(--clr-white);
+  color: var(--clr-white); /* Use white color defined in root variables */
   position: relative;
 }
+
 .navigation a {
-  color: var(--clr-white);
+  color: var(--clr-white); /* Use white color defined in root variables */
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -61,6 +55,7 @@ header {
   list-style: none;
   text-align: center;
 }
+
 .navigation .navbar {
   display: none;
   position: absolute;
@@ -294,7 +289,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* border: 1px solid blue; */
   margin-top: 10px;
 }
 .shopifyCard p {
@@ -312,7 +306,6 @@ header {
 }
 /* Changes here */
 .join {
-  /* border: 1px solid red; */
   margin: 1.5rem auto;
 }
 .join .join__img,
@@ -328,7 +321,6 @@ header {
   text-align: center;
   margin: 1rem auto;
   width: 80%;
-  /* border: 1px solid green; */
   color: #1f3155;
   font-size: 18px;
   font-family: Roboto;
@@ -344,7 +336,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* border: 1px solid blue; */
   margin-top: 10px;
   border-radius: 2px;
   background: #fff;
@@ -364,7 +355,6 @@ header {
   line-height: normal;
 }
 .items {
-  /* border: 2px solid magenta; */
   background: linear-gradient(
     172deg,
     #fafcfe 20.48%,
@@ -380,6 +370,10 @@ header {
   margin-left: auto;
 }
 
+.bottomItemCards .lastFourtyText {
+  display: none;
+}
+
 .bottomItem .mainDesc {
   display: flex;
   justify-content: center;
@@ -392,14 +386,12 @@ header {
   letter-spacing: 1.28px;
 }
 .itemsImages {
-  /* border: 1px solid red; */
   display: block;
   margin: auto;
   width: 70%;
 }
 .card {
   margin-top: 30px;
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 .itesmsDescription {
@@ -576,7 +568,6 @@ header {
 /* Padding changed */
 .benefits {
   padding-top: 20px;
-  border: 2px solid #b3bccf;
   background: #2f5792;
 }
 .benefitsGold {
@@ -612,7 +603,6 @@ header {
   text-align: left;
   line-height: 0;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 10px;
   padding-left: 10px;
 }
@@ -739,7 +729,6 @@ header {
 .reviewCard {
   padding: 1rem 1.5rem;
   border-radius: 10px;
-  /* border: 1px solid red; */
   margin: 20px 8px;
   text-align: center;
   /* align-items: center; */
@@ -959,6 +948,8 @@ header {
   line-height: normal;
   letter-spacing: 0.36px;
 }
+
+/* Mediaquery for bigger than 424px design */
 @media (min-width: 425px) {
   .logo img {
     width: 4rem;
@@ -989,6 +980,7 @@ header {
   }
 }
 
+/* Mediaquery for bigger than 509px design */
 @media (min-width: 510px) {
   .mid {
     color: #ffffff;
@@ -1052,7 +1044,6 @@ header {
   .items .topItem .services ul {
     margin-right: auto;
     margin-left: auto;
-    border-bottom: 2px solid #dfe4ea;
   }
 
   .items .topItem li {
@@ -1064,6 +1055,8 @@ header {
     gap: 2rem;
   }
 }
+
+/* Mediaquery for bigger than 639px design */
 @media (min-width: 640px) {
   header {
     height: 350px;
@@ -1245,6 +1238,8 @@ header {
     height: 1px;
   }
 }
+
+/* Mediaquery for bigger than 768px design */
 @media (min-width: 769px) {
   .company-logo {
     margin-right: 20px;
@@ -1371,17 +1366,87 @@ header {
     align-self: center;
   }
 }
+
+/* Mediaquery for bigger than 1023px design */
 @media (min-width: 1024px) {
-  .shopify {
-    left: 40%;
+  header {
+    padding: 0;
   }
-  .heroContent {
-    position: absolute;
-    left: 20%;
+  .container {
+    max-width: 1045px;
+    margin: auto;
+  }
+  .navigation {
+    width: 100%;
+    padding: 20px 3.125%;
+    justify-content: space-between;
+  }
+  .home {
+    position: relative;
   }
   .mid {
-    margin-top: 0px;
+    position: static;
   }
+
+  .one {
+    top: 278px;
+    left: 424px;
+    height: 267px;
+    width: 124px;
+  }
+  .two {
+    top: 342px;
+    left: 546px;
+    width: 154px;
+    height: 267px;
+  }
+  .three {
+    top: 271px;
+    left: 712px;
+    width: 141px;
+    height: 267px;
+  }
+  .four {
+    top: 356px;
+    left: 873px;
+    width: 142px;
+    height: 267px;
+  }
+
+  .heroContent span {
+    font-size: 208px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .heroContent img {
+    top: 370px;
+    left: 526px;
+    height: 214px;
+    width: 392px;
+  }
+  .shopify {
+    top: 180px;
+    left: 571px;
+    /* padding-left: 30%; */
+  }
+
+  .shopify img {
+    height: 80px;
+    width: 80px;
+    margin-right: 12px;
+  }
+  .shopify p {
+    color: #fff;
+    font-size: 64px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+  }
+
   .scrollBtn {
     transform: rotate(270deg);
     padding-left: 60px;
@@ -1393,12 +1458,371 @@ header {
   .bottomItemCards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .bottomItemCards .card {
+    margin: 0;
+  }
+  .bottomItemCards .card-a {
+    margin-top: 20px;
+  }
+  .bottomItemCards .card-b {
+    margin-top: 70px;
+  }
+
+  .bottomItemCards .card-c {
+    margin-top: 120px;
+  }
+  .bottomItemCards .card-d {
+    margin-top: 20px;
+  }
+  .bottomItemCards .card-e {
+    margin-top: 70px;
+  }
+  .bottomItemCards .card-f {
+    margin-top: 120px;
+  }
+
+  .card-d {
+    clear: left;
+  }
+
+  .card-e {
+    clear: right;
+  }
+
+  .card-f {
+    clear: left;
+  }
+  .serviceSection {
+    width: 100%;
+    background: linear-gradient(
+      172deg,
+      #fafcfe 20.48%,
+      rgba(234, 243, 255, 0.96) 39.06%,
+      #f0f7ff 72.25%,
+      rgba(255, 255, 255, 0) 93.88%
+    );
+  }
+  .benefitSection {
+    width: 100%;
+    background: #2f5792;
+  }
+  .reviewSection {
+    background: linear-gradient(
+      172deg,
+      #f6fbff 20.48%,
+      rgba(234, 243, 255, 0.96) 39.06%,
+      #eef6ff 72.25%,
+      rgba(255, 255, 255, 0) 93.88%,
+      #ddeeff
+    );
+  }
+  .footerSection {
+    background: #213757;
+  }
 }
 
+/* Mediaquery for bigger than 1439px design */
 @media (min-width: 1440px) {
+  header {
+    padding: 0;
+  }
   .container {
     max-width: 1045px;
-    border: 5px solid red;
+    position: relative;
     margin: auto;
+  }
+  .navigation {
+    width: 100%;
+    padding: 20px 3.125%;
+    justify-content: space-between;
+  }
+
+  .home {
+    position: relative;
+    padding-left: 10%;
+  }
+  .mid {
+    position: static;
+  }
+
+  .one {
+    top: 278px;
+    left: 424px;
+    height: 267px;
+    width: 124px;
+  }
+  .two {
+    top: 342px;
+    left: 546px;
+    width: 154px;
+    height: 267px;
+  }
+  .three {
+    top: 271px;
+    left: 712px;
+    width: 141px;
+    height: 267px;
+  }
+  .four {
+    top: 356px;
+    left: 873px;
+    width: 142px;
+    height: 267px;
+  }
+
+  .heroContent span {
+    font-size: 228px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .heroContent img {
+    top: 370px;
+    left: 526px;
+    height: 214px;
+    width: 392px;
+  }
+  .shopify {
+    top: 180px;
+    left: 571px;
+    padding-left: 15%;
+  }
+
+  .shopify img {
+    height: 80px;
+    width: 80px;
+    margin-right: 12px;
+  }
+  .shopify p {
+    color: #fff;
+    font-size: 64px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .logos {
+    height: 203px;
+    position: relative;
+  }
+  .logos .partnersLogo {
+    position: absolute;
+    width: 949px;
+    height: 78px;
+    left: 154px;
+    right: 337px;
+    bottom: 86px;
+    top: 49px;
+  }
+
+  .logoSide {
+    width: 285px;
+    height: 270px;
+    bottom: 68px;
+  }
+  .logoSide .shopifyStars {
+    margin-top: 50px;
+    width: 150px;
+    height: 20px;
+  }
+
+  .logoSide .shopifyJobCounts {
+    padding-top: 30px;
+    width: 150px;
+    height: 67px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .logoSide .shopifyCard {
+    margin-top: 40px;
+    margin-left: 68px;
+    width: 76px;
+    height: 20px;
+  }
+  .logoSide .shopifyCard .shopifyCardImage {
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+  }
+
+  .join .joinMain {
+    width: 394px;
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+
+  .joinMain span {
+    font-weight: 700;
+  }
+  .join .join__img {
+    width: 648px;
+    height: 710.147px;
+    margin-left: 61px;
+    margin-right: 121px;
+    margin-top: 28px;
+  }
+
+  .join .free {
+    margin-top: 54px;
+    margin-left: 134px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 273px;
+    height: 45px;
+  }
+  .free .freeText {
+    /* padding-top: 54px; */
+    font-weight: 400;
+    justify-content: center;
+  }
+  .topItem {
+    width: 944px;
+    height: 272px;
+  }
+  .topItemMain {
+    position: absolute;
+  }
+  .buttn {
+    position: absolute;
+    display: flex;
+    top: 59px;
+    right: 0px;
+    width: 273px;
+    height: 63px;
+    border-radius: 2px;
+    padding: 23px 0px 24px 24px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .buttn i {
+    padding-left: 103px;
+    /* padding-right: 27px; */
+  }
+
+  .goldText {
+    text-align: start;
+  }
+
+  .topMainText {
+    text-align: start;
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+  }
+  .topItemHeader {
+    /* border: 3px solid limegreen; */
+    position: absolute;
+    top: 184px;
+    width: 1044px;
+    height: 272px;
+  }
+  .container #service {
+    height: 1900px;
+  }
+  .services {
+    position: absolute;
+    width: 100%;
+    top: 404px;
+    left: 0px;
+  }
+  .bottomItemCards .lastFourtyText {
+    height: 155px;
+    width: 308px;
+    display: inline;
+    position: absolute;
+    top: 627px;
+    left: 710px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+  }
+  .bottomItemCards .card-a {
+    position: absolute;
+    top: 507px;
+  }
+  .bottomItemCards .card-b {
+    position: absolute;
+    top: 607px;
+    left: 355px;
+  }
+
+  .bottomItemCards .card-c {
+    position: absolute;
+    top: 677px;
+    left: 710px;
+  }
+  .bottomItemCards .card-d {
+    position: absolute;
+    top: 945px;
+    left: 0;
+  }
+  .bottomItemCards .card-e {
+    position: absolute;
+    top: 1045px;
+    left: 355px;
+  }
+
+  .bottomItemCards .card-f {
+    position: absolute;
+    top: 1125px;
+    left: 710px;
+  }
+
+  #portfolio {
+    position: absolute;
+    top: 1583px;
+    left: 0px;
+    z-index: 999;
+    justify-content: start;
+    align-items: start;
+  }
+  #portfolio .team__details {
+    width: 380px;
+  }
+  .benefits {
+    padding-top: 200px;
+    border: 2px solid #2f5792;
+  }
+
+  .benefits .benefitsTopMain {
+    width: 404px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  #prevButton {
+    margin-left: 47px;
+  }
+  #nextButton {
+    margin-right: 47px;
   }
 }

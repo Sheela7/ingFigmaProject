@@ -24,6 +24,7 @@ const headerImages = [
 ];
 let currentImageIndex = 0;
 
+// Event handler for previous button
 prevButton.addEventListener("click", () => {
   console.log("pressed prev");
   currentImageIndex =
@@ -35,6 +36,7 @@ prevButton.addEventListener("click", () => {
   }, 500);
 });
 
+//Event handler for next button
 nextButton.addEventListener("click", () => {
   console.log("pressed next");
   currentImageIndex = (currentImageIndex + 1) % headerImages.length;
